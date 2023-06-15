@@ -70,7 +70,10 @@ const Calendar = () => {
       const date = addDays(startDate, i);
       const formattedDate = format(date, "d");
       const formattedDay = format(date, "EEEE");
-      dates.push(<td key={i}>{formattedDate}</td>);
+      const isCurrentDate = isSameDay(date, currentDate);
+      const dateCellClasses = isCurrentDate ? "current-date" : "";
+
+      dates.push(<td key={i} className={dateCellClasses}>{formattedDate}</td>);
       days.push(<td key={i}>{formattedDay}</td>);
     }
 
