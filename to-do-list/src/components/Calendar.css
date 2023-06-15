@@ -1,0 +1,55 @@
+.calendar-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar-table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.item-button {
+    width: 100%;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add any other desired styles for the calendar */
+.task-text {
+    cursor: pointer;
+}
+
+.task-text.completed {
+    background-color: green;
+}
+
+.delete-button {
+    margin-left: 5px;
+    padding: 2px 6px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
